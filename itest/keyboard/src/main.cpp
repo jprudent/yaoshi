@@ -1,6 +1,10 @@
 #include <Arduino.h>
 #include "Keyboard.h"
 
+/*
+Place the cursor somewhere you can type things with keyboard.
+It should input "AZERTY"
+*/
 void setup() {
   Keyboard.begin();
 }
