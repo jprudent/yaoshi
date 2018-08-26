@@ -24,7 +24,7 @@ class AlphabetNavigator {
     char currentLetter();
     void reset();
 
-  //private:
+  private:
 
     size_t position;
     Keys ** keys;
