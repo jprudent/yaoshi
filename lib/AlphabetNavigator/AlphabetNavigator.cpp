@@ -14,11 +14,11 @@ Keys::Keys(const char * symbols, size_t len) {
 }
 
 char Keys::letterAt(size_t index) {
-  return symbols[index];
+  return this->symbols[index];
 }
 
 size_t Keys::maxIndex() {
-  return len - 1;
+  return this->len - 1;
 }
 
 
@@ -58,13 +58,13 @@ char AlphabetNavigator::right() {
 }
 
 char AlphabetNavigator::currentLetter() {
-  return currentKeys()->letterAt(position);
+  return currentKeys()->letterAt(this->position);
 }
 
 void AlphabetNavigator::reset() {
-  this->position = nbKeys / 2;
+  this->position = this->nbKeys / 2;
 }
 
 Keys * AlphabetNavigator::currentKeys() {
-  return keys[currentKeysIndex];
+  return this->keys[this->currentKeysIndex];
 }
